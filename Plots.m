@@ -10,7 +10,7 @@ aligned = readmatrix("Output/AlignedSignals.csv");
 %% All cores
 cores = {'DEN13A','DEN13B','DEN19A','DEN22A','DEN22B'};
 Ncore = length(cores); % number of cores
-
+ab 
 %% Loads isotope and CFA data
 for c = 1:Ncore
     core = cores{c};
