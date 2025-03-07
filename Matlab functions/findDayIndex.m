@@ -1,10 +1,11 @@
-% Finds the day index
-
 function ind = findDayIndex(year,month,day,startYear)
+    % findDayIndex  returns index of date given any start year
+    %   ind = findDayIndex(year,month,day,startYear)
+    %
+    %   Includes leap days.
 
-    if ~exist('startYear','var')
-        % if non startYear is given, assume 1901
-        startYear = 1901;
+    if year < startYear
+        error("year must be greater than or equal to startYear")
     end
     
     yearsCompleted = (startYear:year-1)'; % total number of completed years

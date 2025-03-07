@@ -1,8 +1,7 @@
-% Checks if a year 'year' is a leap year
-% Returns true in a variable 'leap' if it is
-% Returns false in a variable 'leap' if it is not
-
 function leap = isLeap(year)
+    % isLeap  returns TRUE if year is a leap year, otherwise FALSE
+    %   leap = isLeap(year)
+
     if mod(year,4) ~= 0
         leap = false;
     elseif mod(year,100) ~= 0

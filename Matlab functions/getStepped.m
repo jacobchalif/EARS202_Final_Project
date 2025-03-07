@@ -1,6 +1,10 @@
-
-
 function [stepX,stepY] = getStepped(minX,maxX,y)
+    % getStepped  returns stepped x and y values for y data with top and
+    %             bottom values. Useful for discrete ice core data.
+    %   
+    %   [stepX,stepY] = getStepped(minX,maxX,y)
+    %
+
     [~,si] = sort(minX,'ascend');
     minX = minX(si);
     maxX = maxX(si);
